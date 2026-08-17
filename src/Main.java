@@ -9,12 +9,16 @@ public class Main {
         // Q1:
         System.out.println("how many numbers do u want?");
         int n = input.nextInt();
-
         int[] num = new int[n];
-
         for (int i = 0; i < num.length; i++) {
             System.out.println("enter a number:");
             num[i] = input.nextInt();
+        }
+
+        if (num[0] == num[num.length - 1]) {
+            System.out.println("true");
+        }else{
+            System.out.println("false");
         }
 
         // Q2:
